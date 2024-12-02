@@ -1,0 +1,11 @@
+.app-button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: #4F92B1;
+    color: white;
+}
+
+.app-button:active {
+    background-color: #427e9b;
+}

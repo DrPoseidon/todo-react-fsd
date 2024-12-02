@@ -1,0 +1,11 @@
+.app-input {
+    height: 35px;
+    width: 100%;
+    padding: 0 15px;
+    border: 1px solid #4f92b1;
+}
+
+.app-input::placeholder {
+    text-align: center;
+    font-style: italic;
+}

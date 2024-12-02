@@ -1,0 +1,7 @@
+.task-list {}
+
+.task-list__input {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
