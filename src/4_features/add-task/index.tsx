@@ -31,6 +31,6 @@ export default function AddTask({ addTask }: Props) {
       setInputValue(value);
     }}/>
 
-    <AppButton value="+" onClick={_addTask}/>
+    <AppButton value="+" onClick={_addTask} disabled={!inputValue}/>
   </div>)
 }

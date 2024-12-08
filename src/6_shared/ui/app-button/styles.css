@@ -2,10 +2,15 @@
     width: 35px;
     height: 35px;
     border: none;
-    background-color: #4F92B1;
+    background-color: var(--accent-color);
     color: white;
+    cursor: pointer;
 }
 
 .app-button:active {
-    background-color: #427e9b;
+    background-color: var(--accent-color-dark);
+}
+
+.app-button:disabled {
+    cursor: not-allowed;
 }

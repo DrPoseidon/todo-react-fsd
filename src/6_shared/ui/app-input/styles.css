@@ -2,10 +2,10 @@
     height: 35px;
     width: 100%;
     padding: 0 15px;
-    border: 1px solid #4f92b1;
+    border: 1px solid var(--accent-color);
+    font-style: italic;
+    text-align: center;
+    color: var(--accent-color-dark);
 }
 
-.app-input::placeholder {
-    text-align: center;
-    font-style: italic;
-}
+.app-input::placeholder {}
