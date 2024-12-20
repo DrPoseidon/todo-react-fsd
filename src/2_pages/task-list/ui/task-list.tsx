@@ -1,17 +1,16 @@
 import './styles.css';
-import {useState} from "react";
 import AddTask from "@/features/add-task";
 import {TTask} from "@/entities/task";
 import TasksList from "@/entities/task/ui/tasks-list";
 import {TTasks} from "@/shared/types";
+import {useImmer} from "use-immer";
 
 export default function TaskList() {
-  const [tasks, setTasks] = useState<TTasks>({});
+  const [tasks, setTasks] = useImmer<TTasks>({});
 
   const addTask = (task: TTask) => {
-    setTasks({
-      ...tasks,
-      [task.id]: task
+    setTasks(prevTasks => {
+      prevTasks[task.id] = task;
     })
   }
 

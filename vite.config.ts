@@ -1,10 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path  from 'node:path'
+import ViteSvgLoader from 'vite-plugin-svgr';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), ViteSvgLoader()],
   resolve: {
     alias: {
       '@/app': path.resolve(process.cwd(), 'src/1_app'),
