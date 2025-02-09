@@ -43,6 +43,7 @@ export default function TaskList() {
       <AddTask addTask={handleAddTask} />
 
       <TasksList
+        className="task-list__tasks"
         tasks={tasks}
         toggleTaskCompleted={handleToggleTaskCompleted}
         onEditTask={handleEditTask}

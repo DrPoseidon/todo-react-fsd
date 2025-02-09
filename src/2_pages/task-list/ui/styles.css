@@ -1,7 +1,9 @@
-.task-list {}
-
 .task-list__input {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.task-list__tasks {
+  margin-top: 10px;
 }
