@@ -1,36 +1,39 @@
-.task-row, .task-row__task-info, .task-row__task-controls {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.task-row,
+.task-row__task-info,
+.task-row__task-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .task-row {
-    gap: 10px;
-    justify-content: space-between;
-    padding: 10px;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
 .task-row__task-info {
-    gap: 10px;
-    color: var(--accent-color-light)
+  gap: 10px;
+  color: var(--accent-color-light);
 }
 
 .task-row--completed .task-row__task-title {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .task-row__icon {
-    background-size: contain;
-    width: 15px;
-    height: 15px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background-size: contain;
 }
 
 .task-row__task-controls-edit {
-    background-image: url(../../../../6_shared/assets/svg/edit.svg);
+  background-image: url(../../../../6_shared/assets/svg/edit.svg);
 }
 
 .task-row__task-controls-remove {
-    background-image: url(../../../../6_shared/assets/svg/x.svg);
+  background-image: url(../../../../6_shared/assets/svg/x.svg);
 }

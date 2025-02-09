@@ -13,6 +13,10 @@ export default function AddTask({ addTask }: Props) {
 
 
   const _addTask = () => {
+    if (!inputValue) {
+      return;
+    }
+
     addTask({
       id: new Date().getTime(),
       title: inputValue,
@@ -29,7 +33,7 @@ export default function AddTask({ addTask }: Props) {
   return(<div className="add-task">
     <AppInput placeholder={"what needs to be done?"} value={inputValue} onInput={(value: string) => {
       setInputValue(value);
-    }}/>
+    }} onKeyUpEnter={_addTask}/>
 
     <AppButton value="+" onClick={_addTask} disabled={!inputValue}/>
   </div>)
